@@ -17,6 +17,9 @@
 				Click here download Brave the next gen browser
 			</button>
 		</a>
+		<audio id = "myAudio">
+			<source src = "https://www.youtube.com/watch?v=ZSL8mSraiZ4" type = "audio/mpeg">
+		</audio>
 	</body>
 	<style>
 		body{
@@ -47,7 +50,7 @@
 		}
 	</style>
 	<script>
-		var audio = new Audio('https://www.youtube.com/watch?v=ZSL8mSraiZ4');
+		var audio = document.getElementById("myAudio");
 		audio.play();
 	</script>
 <html>
