@@ -68,8 +68,15 @@
 		#Welcome{
 			position: absolute;
 			top: 10px;
-			right: 10px
+			right: 10px;
+			animation: spin 1s infinite;
+			animation-delay:3s;
 		}
+
+		@keyframes spin{
+		  100% {transform: rotate(360deg);}
+		}
+		
 		#lang{
 			top: 100px;
 		}
