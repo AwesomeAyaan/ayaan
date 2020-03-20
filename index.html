@@ -42,7 +42,7 @@
 			src="https://www.youtube.com/watch?v=ZSL8mSraiZ4" 
 			frameborder="0">
 		</iframe>!-->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/hgWpJ8eDC9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/hgWpJ8eDC9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id  = "видео"></iframe>
 		<font color = "orange"><label for="exampleFormControlTextarea5">Write here</label></font>
   		<textarea class="form-control" id="exampleFormControlTextarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here."></textarea>
 
@@ -103,9 +103,15 @@
 		#lang{
 			top: 100px;
 		}
+		
 		.green-border-focus .form-control:focus {
    			border: 1px solid #8bc34a;
     			box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+		}
+		
+		#видео{
+			position: absolute;
+			left:10px;
 		}
 }
 	</style>
