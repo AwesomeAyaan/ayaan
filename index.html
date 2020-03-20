@@ -56,6 +56,7 @@
 			border-style: rigid;
 			boder-width: 100px;
 			border-color: blue;
+			overflow: auto;
 		}
 		#brave{
 			top:200px;
@@ -99,5 +100,6 @@
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3")
 		x.play()
 		
+		setTimeout(function(){x.pause();}, 3000);
 	</script>
 <html>
