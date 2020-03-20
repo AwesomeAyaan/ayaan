@@ -45,8 +45,8 @@
 			frameborder="0">
 		</iframe>!-->
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/hgWpJ8eDC9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id  = "видео"></iframe>
-		<font color = "orange"><label>Name? 名字? имя?</label></font>
-		<textarea rows = "1" cols = "15" placeholder = "Name. e.g: Bob"
+		<font color = "orange"><label id = "NameCall">Name? 名字? имя?</label></font>
+		<textarea rows = "1" cols = "15" placeholder = "Name. e.g: Bob">
 		<font color = "orange"><label for="exampleFormControlTextarea5">Comment here. 在这里评论. Комментарий здесь</label></font>
   		<textarea class="form-control" id="exampleFormControlTextarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here. e.g: What i like about this website ..."></textarea>
 
@@ -98,6 +98,11 @@
 			animation: spin 6s infinite;
 			animation-delay: 2s;
 			animation-direction: alternate;
+		}
+		#NameCall{
+			position: absolute;
+			top: 5px;
+			
 		}
 
 		@keyframes spin{
