@@ -33,11 +33,14 @@
 				</ul>
 			</font>
 		</div>
-		
+		<!--
 		<iframe width="560" height="315" 
 			src="https://www.youtube.com/watch?v=ZSL8mSraiZ4" 
 			frameborder="0">
-		</iframe>
+		</iframe>!-->
+		<textarea id="text" rows="8" cols="80" maxlength  = "500" placeholder = ""></textarea>
+		<label for="exampleFormControlTextarea5">Write here</label>
+  		<textarea class="form-control" id="exampleFormControlTextarea5" rows="4" cols = "80" maxlength=  "500" placeholder = "Write here."></textarea>
 
 	</body>
 	<style>
@@ -86,9 +89,15 @@
 		#lang{
 			top: 100px;
 		}
+		.green-border-focus .form-control:focus {
+   			border: 1px solid #8bc34a;
+    			box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+		}
+}
 	</style>
 	<script>
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3")
 		x.play()
+		
 	</script>
 <html>
