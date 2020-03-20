@@ -121,6 +121,8 @@
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3").loop()
 		x.play()
 		
+		x.loop = true;
+		
 		function pause(){
 			if(x.paused) {
 			  x.play();
