@@ -22,7 +22,7 @@
 			</button>
 		</a>
 		
-		<button onclick = "pause" type = "button" id = "pauseButton">Click here to pause/unpause music</button>
+		<button onclick = "pause()" type = "button" id = "pauseButton">Click here to pause/unpause music</button>
 		<font color = "lightblue"><h3>I know many languages here are a list of them. The first 3 I know the most, I only know parts of the rest.</h3></font>
 		<div id = "lang">
 			<font color = "yellow">
@@ -111,6 +111,13 @@
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3")
 		x.play()
 		
-		setTimeout(function(){x.pause();}, 3000);
+		function pause(){
+			if(audio.paused) {
+			  audio.play();
+			}
+			else {
+			  audio.pause();
+			}
+		}
 	</script>
 <html>
