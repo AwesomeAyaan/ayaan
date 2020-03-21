@@ -157,8 +157,8 @@
 			var dateAmer = "USA. date: ".concat(d.getDate(), "/", d.getMonth(), "/", d.getFullYear())
 			var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
 			
-			var comment = document. getElementById("Textarea5").innerHTML
-			var name = document.getElementById("NameCall").innerHTML
+			var comment = document. getElementById("Textarea5").innerHTML.value
+			var name = document.getElementById("NameCall").innerHTML.value
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name)
 	
 			document.getElementById("commentA").innerHTML = Form
