@@ -48,8 +48,8 @@
 		<font color = "orange"><label id = "NameCall">Name? 名字? имя?</label></font>
 		<br>
 		<textarea rows = "1" cols = "15" placeholder = "Name. e.g: Bob"></textarea>
-		<font color = "orange"><label for="exampleFormControlTextarea5">Comment here. 在这里评论. Комментарий здесь</label></font>
-  		<textarea class="form-control" id="exampleFormControlTextarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here. e.g: What i like about this website ..."></textarea>
+		<font color = "orange"><label for="Textarea5">Comment here. 在这里评论. Комментарий здесь</label></font>
+  		<textarea class="form-control" id="Textarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here. e.g: What i like about this website ..."></textarea>
 		<button type = "button" onclick = "makeComment()">Make comment</button>
 		<font color = "orange"><p id = "commentA"></p></font>
 
@@ -148,12 +148,13 @@
 		var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
 		
 		function makeComment(){
-			var comment = document. querySelector("#exampleFormControlTextarea5")
-			var name = document.querySelector("#NameCall")
+			var comment = document. getElementById("Textarea5")
+			var name = document.getElementById("NameCall")
 
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name)
+			document.getElementById("commentA").innerHTML = comment.concat(" ", name)
 
-			document.getElementById("commentA").innerHTML = Form.concat(" ")
+			//document.getElementById("commentA").innerHTML = Form.concat(" ")
 		}
 	</script>
 <html>
