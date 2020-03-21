@@ -129,6 +129,7 @@
 		}
 }
 	</style>
+	
 	<script>
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3")
 		x.play()
@@ -142,12 +143,15 @@
 			  x.pause();
 			}
 		}
+	</script>
+	
 		
-		var d = new Date()
-		var dateAmer = "USA. date: ".concat(d.getDate(), "/", d.getMonth(), "/", d.getFullYear())
-		var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
-		
+	<script>	
 		function makeComment(){
+			
+			var d = new Date()
+			var dateAmer = "USA. date: ".concat(d.getDate(), "/", d.getMonth(), "/", d.getFullYear())
+			var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
 			
 			var comment = document. getElementById("Textarea5").value()
 			var name = document.getElementById("NameCall").value()
