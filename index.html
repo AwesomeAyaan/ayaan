@@ -47,6 +47,8 @@
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/hgWpJ8eDC9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id  = "видео"></iframe>
 		<font color = "orange"><label id = "NameCall">Name? 名字? имя?</label></font>
 		<br>
+		
+		
 		<textarea rows = "1" cols = "15" placeholder = "Name. e.g: Bob"></textarea>
 		<font color = "orange"><label for="Textarea5">Comment here. 在这里评论. Комментарий здесь</label></font>
   		<textarea class="form-control" id="Textarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here. e.g: What i like about this website ..."></textarea>
@@ -130,7 +132,6 @@
 	<script>
 		var x = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3")
 		x.play()
-		
 		x.loop = true;
 		
 		function pause(){
@@ -143,16 +144,16 @@
 		}
 		
 		var d = new Date()
-		
 		var dateAmer = "USA. date: ".concat(d.getDate(), "/", d.getMonth(), "/", d.getFullYear())
 		var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
 		
 		function makeComment(){
+			
 			var comment = document. getElementById("Textarea5").value()
 			var name = document.getElementById("NameCall").value()
-
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name)
 
+			x.pause()
 			document.getElementById("commentA").innerHTML = Form
 		}
 	</script>
