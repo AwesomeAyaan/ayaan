@@ -148,13 +148,12 @@
 		var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear())
 		
 		function makeComment(){
-			var comment = document. getElementById("Textarea5")
-			var name = document.getElementById("NameCall")
+			var comment = document. getElementById("Textarea5").value()
+			var name = document.getElementById("NameCall").value()
 
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name)
-			document.getElementById("commentA").innerHTML = comment.concat(" ", name)
 
-			//document.getElementById("commentA").innerHTML = Form.concat(" ")
+			document.getElementById("commentA").innerHTML = Form
 		}
 	</script>
 <html>
