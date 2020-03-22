@@ -6,7 +6,7 @@
 	
 	<body>
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-		<span class = "Enter"><font color = "darkgreen"><h1> This is my first website! I hope you like it. 你好，这是我的网站。Прибет, это мой сайт</h1></font></span>
+		<span id = "Enter"><font color = "darkgreen"><h1> This is my first website! I hope you like it. 你好，这是我的网站。Прибет, это мой сайт</h1></font></span>
 		
 		<a href = "https://www.youtube.com/channel/UCyoT7XBr5Fj3HYzhGTBJCvQ" target = "_blank">
 			<button type = "button" id = "yt">
@@ -99,11 +99,15 @@
 			border-width: medium;
 			border-color: green;
 		}
-		.Enter{
+		#Enter{
 			top: 0px;
 			left: 100px;
 			text-align: center;
 			font-family: 'Varela Round', sans-serif;
+		}
+		#Enter:hover{
+			font-size: 40px;
+			transition: font-size 1s linear: 
 		}
 		#Welcome{
 			position: absolute;
