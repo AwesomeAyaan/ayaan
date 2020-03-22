@@ -169,10 +169,7 @@
 			var name = document.getElementById("NameCall").value;
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name);
 			
-			var $newP = $("<p>")
-			$newP.text(Form)
-			$newP.appendTo("body")
-			$newP.addClass("paragraphFor")
+			$("<p>").text(Form).appendTo("body").addClass("paragraphFor")
 			$(".paragraphFor").css("color", "orange")
 		}
 	</script>
