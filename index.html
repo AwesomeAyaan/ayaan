@@ -59,7 +59,7 @@
 		<textarea rows = "1" cols = "15" placeholder = "Name. e.g: Bob" id = "NameCall"></textarea>
 		<br>
 		<br>
-		<font color = "orange"><label for="Textarea5" id = "labelComment">Comment here. 在这里评论. Комментарий здесь</label></font>
+		<font color = "orange"><label for="Textarea5" id = "label">Comment here. 在这里评论. Комментарий здесь</label></font>
   		<textarea class="form-control" id="Textarea5" rows="6" cols = "80" maxlength=  "500" placeholder = "Write here. e.g: What i like about this website ..."></textarea>
 		
 		<button type = "button" onclick = "makeComment()">Make comment</button>
@@ -74,13 +74,11 @@
 			background: url("https://i.imgur.com/D25S0Fy.jpg");
 			background-size: 425px 350px
 		}
-		#labelComment{
-			position: relative;
-			left: 5px;
+		#label{
+			display:block;
 		}
-		#TextArea5{
-			position: relative;
-			left: 5px
+		#TextArea5{ 
+			display:block;
 		}
 		#yt{
 			top:200px;
