@@ -8,9 +8,11 @@
 	
 	<body>
 		<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-		<span class = "Enter"><font color = "darkgreen"><h1> This is my first website! I hope you like it.</h1></font></span>
-		<span class = "Enter"><font color = "darkgreen"><h1>你好，这是我的网站。 </h1></font></span>
-		<span class = "Enter"><font color = "darkgreen"><h1>Прибет, это мой сайт</h1></font></span>
+		<div id = "wrap">
+			<span class = "Enter"><font color = "darkgreen"><h1> This is my first website! I hope you like it.</h1></font></span>
+			<span class = "Enter"><font color = "darkgreen"><h1>你好，这是我的网站。 </h1></font></span>
+			<span class = "Enter"><font color = "darkgreen"><h1>Прибет, это мой сайт</h1></font></span>
+		</div>
 		
 		<a href = "https://www.youtube.com/channel/UCyoT7XBr5Fj3HYzhGTBJCvQ" target = "_blank">
 			<button type = "button" id = "yt">
@@ -108,6 +110,17 @@
 			border-style: rigid;
 			border-width: medium;
 			border-color: green;
+		}
+		
+		#wrap {
+		    position: relative;
+		    display: inline-block;
+		}
+
+		#wrap span {
+		    position: absolute;
+		    top: 0;
+		    right: 0;
 		}
 		.Enter{
 			top: 0px;
