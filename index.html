@@ -74,7 +74,7 @@
 	<style>
 		body{
 			background: url("https://i.imgur.com/D25S0Fy.jpg");
-			background-size: 425px 350px
+			background-size: 425px 350px;
 		}
 		#label{
 			display:block;
@@ -174,7 +174,7 @@
 		
 		function makeComment(){
 			
-			var d = new Date()
+			var d = new Date();
 			var dateAmer = "USA. date: ".concat(d.getDate(), "/", d.getMonth(), "/", d.getFullYear());
 			var dateBrit = "Brit. date: ".concat(d.getMonth(), "/", d.getDate(), "/", d.getFullYear());
 			
@@ -182,11 +182,8 @@
 			var name = document.getElementById("NameCall").value;
 			var Form = dateAmer.concat("; ", dateBrit, ": ", comment, " From-", name);
 			
-			$("<p>").text(Form).appendTo("body").addClass("paragraphFor");
-			$(".paragraphFor").css("color", "orange");
+			$("<p>").text(Form).appendTo("body").addClass("paragraphFor");$(".paragraphFor").css("color", "orange");
 		}
-		$("#Welcome").hide()
-		//$("#Welcome").slideDown(4000);
-		$(".Enter").fadeIn();
+		$("#Welcome").hide();$(".Enter").fadeIn();
 	</script>
 <html>
